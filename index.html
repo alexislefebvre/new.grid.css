@@ -8,7 +8,7 @@
     <link href="./new.min.css" type="text/css" rel="stylesheet">
     <style>
         /* responsiveness */
-        @media all and (min-width: 900px) {
+        @media all and (min-width: 800px) {
             /* add space so that the last item is not at the bottom of the screen */
             main {
                 margin-bottom: 30rem;
@@ -49,7 +49,10 @@
 
     <div id="what">
         <h3>What is this page? <a href="#table-of-content">↑</a></h3>
-        <p>This page shows examples of code to use a minimalist grid with <a href="https://newcss.net/">new.css</a>.</p>
+        <p>
+            This page shows examples of code to use a minimalist grid with <a href="https://newcss.net/">new.css</a>.
+            The display is responsive, items will be stacked vertically if the viewport is smaller than 801 pixels.
+        </p>
     </div>
 
     <div id="css-source">
@@ -84,7 +87,7 @@
 }
 
 /* responsiveness */
-@media all and (max-width: 900px) {
+@media all and (max-width: 800px) {
     /* container */
     .flex {
         flex-direction: column;

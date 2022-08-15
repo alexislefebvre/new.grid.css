@@ -26,7 +26,7 @@
 }
 
 /* responsiveness */
-@media all and (max-width: 900px) {
+@media all and (max-width: 800px) {
     /* container */
     .flex {
         flex-direction: column;
