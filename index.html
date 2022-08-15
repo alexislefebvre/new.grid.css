@@ -6,30 +6,91 @@
     <meta name="theme-color" content="#F6F8FA"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="./new.min.css" type="text/css" rel="stylesheet">
+    <link href="./main.css" type="text/css" rel="stylesheet">
     <link href="./new.grid.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>new.grid.css</h1>
+    <h1>new.grid.css 🧑‍🎨</h1>
 
     <nav>
-        <a href="https://newcss.net/">new.css</a>
-        -
-        <a href="https://github.com/alexislefebvre/new.grid.css">source</a>
+        <a href="https://newcss.net/">🎨 new.css</a>
+        &ndash;
+        <a href="https://github.com/alexislefebvre/new.grid.css">🧑‍💻 source</a>
     </nav>
 </header>
 
 <main>
     <div>
         <h2 id="table-of-content">Table of content</h2>
-        <p><a href="./new.grid.css">See the CSS file</a></p>
-        <p>Examples:</p>
         <ul>
+            <li><a href="#what">What is this page?</a></li>
+            <li><a href="#css-source">CSS source</a></li>
             <li><a href="#one-one">2 columns with same width</a></li>
             <li><a href="#one-two">2 columns, 1/3 and 2/3</a></li>
             <li><a href="#one-one-one-one">4 columns with same width</a></li>
         </ul>
+    </div>
+
+    <div id="what">
+        <h3>What is this page? <a href="#table-of-content">↑</a></h3>
+        <p>This page shows examples of code to use a minimalist grid with <a href="https://newcss.net/">new.css</a>.</p>
+    </div>
+
+    <div id="css-source">
+        <h3>CSS source <a href="#table-of-content">↑</a></h3>
+        <details>
+            <summary>View the code 👀</summary>
+            <pre>.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem 2rem;
+}
+
+.flex.one-one > div {
+    flex-grow: 1;
+    min-width: 48%;
+}
+
+.flex.one-two > div:first-child {
+    min-width: 30%;
+    flex-grow: 1;
+}
+
+.flex.one-two > div:last-child {
+    min-width: 65%;
+    flex-grow: 2;
+}
+
+.flex.one-one-one-one > div {
+    min-width: 20%;
+    flex-grow: 1;
+}
+
+/* responsiveness */
+@media all and (max-width: 900px) {
+    /* container */
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex.one-one-one-one {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex.one-one-one-one > div {
+        width: 40%;
+    }
+
+    .flex.one-one-one-one > div img {
+        min-width: 180px;
+    }
+}
+</pre>
+        </details>
+        <p><a href="./new.grid.css">See the CSS file</a></p>
     </div>
 
     <div id="one-one">
@@ -46,7 +107,7 @@
         </div>
 
         <details>
-            <summary>View the code</summary>
+            <summary>View the code 👀</summary>
             <pre>&lt;div class="flex one-one"&gt;
     &lt;div&gt;
         &lt;h4&gt;Lorem Ipsum&lt;/h4&gt;
@@ -74,7 +135,7 @@
         </div>
 
         <details>
-            <summary>View the code</summary>
+            <summary>View the code 👀</summary>
             <pre>&lt;div class="flex one-two"&gt;
     &lt;div&gt;
         &lt;h4&gt;Lorem Ipsum&lt;/h4&gt;
@@ -92,41 +153,41 @@
         <h3>4 columns with same width <a href="#table-of-content">↑</a></h3>
         <div class="flex one-one-one-one">
             <div>
-                <h4>Dog 1</h4>
-                <p><img src=" https://placedog.net/180/135?id=1" width="180" height="135" alt="Dog 1"></p>
+                <h4>🐶 1</h4>
+                <p><img src=" https://placedog.net/180/135?id=1" width="180" height="135" alt="🐶 1"></p>
             </div>
             <div>
-                <h4>Dog 2</h4>
-                <p><img src=" https://placedog.net/180/135?id=2" width="180" height="135" alt="Dog 2"></p>
+                <h4>🐶 2</h4>
+                <p><img src=" https://placedog.net/180/135?id=2" width="180" height="135" alt="🐶 2"></p>
             </div>
             <div>
-                <h4>Dog 3</h4>
-                <p><img src=" https://placedog.net/180/135?id=3" width="180" height="135" alt="Dog 3"></p>
+                <h4>🐶 3</h4>
+                <p><img src=" https://placedog.net/180/135?id=3" width="180" height="135" alt="🐶 3"></p>
             </div>
             <div>
-                <h4>Dog 4</h4>
-                <p><img src=" https://placedog.net/180/135?id=4" width="180" height="135" alt="Dog 4"></p>
+                <h4>🐶 4</h4>
+                <p><img src=" https://placedog.net/180/135?id=4" width="180" height="135" alt="🐶 4"></p>
             </div>
         </div>
 
         <details>
-            <summary>View the code</summary>
+            <summary>View the code 👀</summary>
             <pre>&lt;div class="flex one-one-one-one"&gt;
     &lt;div&gt;
-        &lt;h4&gt;Dog 1&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=1" width="180" height="135" alt="Dog 1"&gt;&lt;/p&gt;
+        &lt;h4&gt;🐶 1&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=1" width="180" height="135" alt="🐶 1"&gt;&lt;/p&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;h4&gt;Dog 2&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=2" width="180" height="135" alt="Dog 2"&gt;&lt;/p&gt;
+        &lt;h4&gt;🐶 2&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=2" width="180" height="135" alt="🐶 2"&gt;&lt;/p&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;h4&gt;Dog 3&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=3" width="180" height="135" alt="Dog 3"&gt;&lt;/p&gt;
+        &lt;h4&gt;🐶 3&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=3" width="180" height="135" alt="🐶 3"&gt;&lt;/p&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;h4&gt;Dog 4&lt;/h4&gt;
-        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=4" width="180" height="135" alt="Dog 4"&gt;&lt;/p&gt;
+        &lt;h4&gt;🐶 4&lt;/h4&gt;
+        &lt;p&gt;&lt;img src=" https://placedog.net/180/135?id=4" width="180" height="135" alt="🐶 4"&gt;&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
         </details>
