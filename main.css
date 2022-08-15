@@ -1,5 +1,9 @@
-main {
-    margin-bottom: 20rem;
+/* responsiveness */
+@media all and (min-width: 900px) {
+    /* add space so that the last item is not at the bottom of the screen */
+    main {
+        margin-bottom: 30rem;
+    }
 }
 
 footer {
