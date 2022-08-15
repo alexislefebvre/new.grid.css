@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem 2rem;
+}
+
+.flex.one-one > div {
+    flex-grow: 1;
+    min-width: 48%;
+}
+
+.flex.one-two > div:first-child {
+    min-width: 30%;
+    flex-grow: 1;
+}
+
+.flex.one-two > div:last-child {
+    min-width: 65%;
+    flex-grow: 2;
+}
+
+.flex.one-one-one-one > div {
+    min-width: 20%;
+    flex-grow: 1;
+}
+
+/* responsiveness */
+@media all and (max-width: 900px) {
+    /* container */
+    .flex {
+        flex-direction: column;
+    }
+
+    .flex.one-one-one-one {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex.one-one-one-one > div {
+        width: 40%;
+    }
+
+    .flex.one-one-one-one > div img {
+        min-width: 180px;
+    }
+}
