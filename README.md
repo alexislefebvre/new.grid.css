@@ -1,4 +1,4 @@
 # new.grid.css
-Grid for [new.css](https://newcss.net/)
+CSS Grid system, used with [new.css](https://newcss.net/) but it can work without any external CSS.
 
-See the demo: https://alexislefebvre.github.io/new.grid.css/
+See the documentation: https://alexislefebvre.github.io/new.grid.css/
